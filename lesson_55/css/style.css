@@ -1,0 +1,43 @@
+html {
+    font-family: sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-container {
+    padding: 20px;
+    border-bottom: solid 1px gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.nav-list-link {
+    color: rgb(0, 0, 0);
+}
+
+.header-phone>a {
+    color: rgb(50, 49, 49);
+    text-decoration: none;
+}
