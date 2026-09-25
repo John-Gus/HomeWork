@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+.form {
+    color: #fff;
+    background-color: rgb(199, 27, 27);
+    font-weight: 600;
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.form-group {
+    border: none;
+    padding: 0px;
+}
+
+.form-group-title {
+    text-align: center;
+}
+
+.label {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 30px;
+    max-height: 150px;
+}
+
+.input,
+.textarea {
+    border: 1px solid #333;
+    padding: 5px 12px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.input:disabled,
+.textarea:disabled {
+    opacity: 0.5;
+}
+
+.checkbox {
+    position: absolute;
+    appearance: none;
+    outline: none;
+}
+
+.checkbox-label {
+    margin-bottom: 10px;
+}
+
+.checkbox::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    margin-left: -22px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.checkbox:checked::after {
+    background: url("../images/check-icon.svg") no-repeat center, #9e1fff;
+}
+
+.checkbox-text {
+    font-size: 14px;
+}
+
+.checkbox:disabled::after {
+    opacity: 0.5;
+}
+
+.button {
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 18px;
+    background-color: #730ac3;
+    color: #fff;
+    transition: opacity 0.2s;
+    margin: 0 auto;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+.button:not(:disabled):active {
+    background-color: #8719db;
+}
+
+.button:disabled,
+.checkbox:disabled::after {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.checkbox:focus-visible::after,
+.button:focus-visible {
+    outline: 2px solid #f8f7f9;
+    outline-offset: 1px;
+}
