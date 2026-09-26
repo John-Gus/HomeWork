@@ -11,28 +11,28 @@ body {
 }
 
 .form {
-    color: #fff;
-    background-color: rgb(199, 27, 27);
     font-weight: 600;
     max-width: 400px;
     width: 100%;
     border: 1px solid;
-    border-radius: 7px;
+    border-radius: 25px;
     padding: 30px;
 }
 
 .form-group {
     border: none;
-    padding: 0px;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
 .form-group-title {
+    padding: 0px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .label {
     display: inline-block;
-    margin-bottom: 10px;
 }
 
 .textarea {
@@ -47,7 +47,7 @@ body {
     padding: 5px 12px;
     width: 100%;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin: 10px 0;
     outline: none;
 }
 
@@ -56,14 +56,14 @@ body {
     opacity: 0.5;
 }
 
+.checkbox-label {
+    padding-left: 22px;
+}
+
 .checkbox {
     position: absolute;
     appearance: none;
     outline: none;
-}
-
-.checkbox-label {
-    margin-bottom: 10px;
 }
 
 .checkbox::after {
@@ -82,11 +82,8 @@ body {
 }
 
 .checkbox-text {
-    font-size: 14px;
-}
-
-.checkbox:disabled::after {
-    opacity: 0.5;
+    margin-left: 5px;
+    font-size: 16px;
 }
 
 .button {
@@ -95,7 +92,7 @@ body {
     border: none;
     border-radius: 5px;
     padding: 6px 18px;
-    background-color: #730ac3;
+    background-color: #9e1fff;
     color: #fff;
     transition: opacity 0.2s;
     margin: 0 auto;
@@ -119,6 +116,6 @@ body {
 .textarea:focus-visible,
 .checkbox:focus-visible::after,
 .button:focus-visible {
-    outline: 2px solid #f8f7f9;
+    outline: 2px solid #9e1fff;
     outline-offset: 1px;
 }
