@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP.CO</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__sale">
+        <div class="header__sale-text container">
+          <div></div>
+          <div class="header__sale_content">
+            <p>Зарегестрируйтесь и получите скидку 20% на первую покупку.</p>
+            <a href="#" class="header__sale-link-item"
+              >Зарегистрироваться сейчас
+            </a>
+          </div>
+
+          <button class="header__sale-close-btn">X</button>
+        </div>
+      </div>
+
+      <div class="container header__container">
+        <a href="/" class="logo header__logo">
+          <img
+            class="logo__img"
+            src="./images/SHOP.CO.png"
+            alt="Логотип магазина SHOP.CO"
+            width="160"
+            height="22"
+          />
+        </a>
+
+        <nav
+          class="menu header__menu"
+          id="header__menu"
+          aria-label="Главное меню"
+        >
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Магазин</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Скидки</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Новые поступления</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="top-models">Бренды</a>
+            </li>
+          </ul>
+        </nav>
+
+        <form class="header__search-form">
+          <button class="header__search-button">
+            <img
+              class="header__search-icon"
+              src="./icons/search.svg"
+              width="24"
+              height="24"
+              alt="Поиск по странице"
+            />
+          </button>
+          <input
+            class="header__search-txt"
+            type="text"
+            placeholder="Искать товары..."
+          />
+        </form>
+
+        <div class="header__controls">
+          <div class="header__actions">
+            <button
+              class="header__actions-button"
+              title="Корзина"
+              aria-label="Корзина"
+            >
+              <svg width="24" height="24">
+                <use class="header__actions-icon" href="./icons/cart.svg"></use>
+              </svg>
+            </button>
+            <button
+              class="header__actions-button"
+              title="Аккаунт"
+              aria-label="Аккаунт"
+            >
+              <svg width="24" height="24">
+                <use
+                  class="header__actions-icon"
+                  href="./icons/account.svg"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
