@@ -4,6 +4,15 @@
   gap: 24px;
 }
 
+.header__menu-list-item {
+  cursor: pointer;
+}
+
+.header__menu-list-item:hover {
+  transition: 0.2s;
+  color: red;
+}
+
 @media (width > 768px) {
   .header__search-button {
     display: none;
