@@ -1,0 +1,21 @@
+.sale {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #000;
+  color: #fff;
+  padding-block: 10px;
+}
+
+.sale__text {
+  text-align: center;
+}
+
+.sale__content {
+  display: flex;
+}
+
+.sale__content-link {
+  color: #fff;
+  text-decoration: underline;
+}

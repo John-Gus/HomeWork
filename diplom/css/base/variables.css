@@ -1,15 +1,5 @@
 :root {
-  /* font-family */
-  --font-family: "Montserrat", sans-serif;
-
-  /* colors */
-  --main-color: #000;
-  --secondary-color: #fff;
-
   /* container */
   --container-width: 1240px;
   --container-padding: 15px;
-
-  /* transition */
-  --transition-time: 0.2s;
 }

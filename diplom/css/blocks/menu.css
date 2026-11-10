@@ -4,17 +4,34 @@
   gap: 24px;
 }
 
-.menu__link {
-  font-weight: 400;
-  font-size: 16px;
-  color: #000;
-  line-height: 130%;
-  color: var(--main-color);
-  transition: color var(--transition-time);
+@media (width > 768px) {
+  .header__search-button {
+    display: none;
+  }
 }
 
-@media (any-hover: hover) {
-  .menu__link:hover {
-    color: var(--accent-color);
+@media (width <= 900px) {
+  .header__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .sale__text {
+    display: none;
+  }
+}
+
+@media (width <= 768px) {
+  .header__search-form {
+    display: none;
+  }
+  .header__menu-nav {
+    display: none;
+  }
+
+  .logo__img {
+    width: 126px;
+    height: 18px;
   }
 }
