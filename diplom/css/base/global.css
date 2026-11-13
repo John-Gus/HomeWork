@@ -1,8 +1,0 @@
-/* .container {
-  max-width: 1240px;
-  margin: 0 auto;
-} */
-.container {
-  width: min(var(--container-width), 100% - var(--container-padding) * 2);
-  margin-inline: auto;
-}
